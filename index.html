@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="resultado"></div>
+    <script>
+        let q1 = 0;
+        let q2 = 0;
+        let q4 = 0;
+        let q5 = 0;
+        let q6 = 0;
+        let q7 = 0;
+        let q8 = 0;
+        let q9 = 0;
+        let q10 = 0;
+        let resul1="";
+        let resul2="";
+        let resul3="";
+        let resul4="";
+        let resul5="";
+        let resul6="";
+        let resul7="";
+        let resul8="";
+        let resul9="";
+        let resul10="";
+        let login="";
+    
+        
+        let register = prompt("Cadastre seu nome");
+        let msgerror = "";
+        let tentativas = 0;
+
+        let qtdfalse = 0;
+        let scorevalida = 0;
+        let qtdvalida = 0;
+        let scorefalse = 0;
+
+        while (tentativas < 4) {
+            login = prompt("Digite seu nome. " + " Números de tentativas: " + tentativas)
+            if (login === register) {
+                q1 = prompt("1. Quem pintou o quadro Mona Lisa?" + "\n" + "1 = Leonardo Da Vinci." + "2 = Vincent van Gogh " + " 3 = Pablo Picasso");
+                q2 = prompt("2. Qual fruta envenenada comeu a Branca de Neve?" + "\n" + "1 = Uva " + " 2 = Morango" + " 3 = Maça");
+                q3 = prompt("3. Em qual país foi detectado o primeiro caso de Covid-19?" + "\n" + "1 = China 2 = Brasil 3 = Croácia");
+                q4 = prompt("4. Quantos centímetros tem um metro?" + "\n" + "1 = 1000cm 2 = 100cm 3 = 10cm ");
+                q5 = prompt("5. Quem foi o primeiro presidente negro dos Estados Unidos?" + "\n" + "1 = Nelson Mandela 2 = Morgan Freeman 3 = Barack Obama");
+                q6 = prompt("6. Por qual apelido ficou conhecido o famoso jogador de futebol Edson Arantes?" + "\n" + "1 = Mané Garrincha  2 = Edinho 3 = Pelé");
+                q7 = prompt("7. O que acontece se um jogador de futebol derruba o atacante do time adversário dentro da grande área? " + "\n" + "1 = Lateral 2 = Tiro de meta 3 = Penalti");
+                q8 = prompt("8. Em qual cidade surgiu a banda The Beatles?" + "\n" + "1 = Manchester 2 = Liverpool 3 = California");
+                q9 = prompt("9. Qual é o nome da maior empresa de tecnologia da Coreia do Sul? " + "\n" + "1 = Sony 2 =  Xiaomi 3 = Samsung");
+                q10 = prompt("10. Em qual temperatura a água ferve?" + "\n" + "1 = 100 2 = 120 3 = 300");
+                
+                tentativas = 4
+
+            } else {
+                document.getElementById("resultado").innerHTML = msgerror
+                msgerror = "Nome não encontrado, Tente novamente.";
+
+                tentativas++    
+            }
+
+
+        }
+            
+        console.log(resul2)
+                
+
+            if (q1 == 1) {
+                resul1 = "Questão 01: Certa"
+                qtdvalida++
+            } else {
+                resul1 = "Questão 01: Errada" + " <br>" + " Resposta Correta: 1. Leonardo Da Vinci  " + "<br>"
+                qtdfalse++
+            }
+
+            if (q2 == 3) {
+                resul2 = "Questão 02: Certa" 
+
+                qtdvalida++
+            } else {
+                resul2 = "Questão 02: Errada " + " <br>"+" Resposta Correta: 3. Maça"+ "<br>"
+                qtdfalse++
+            }
+
+            if (q3 == 1) {
+                resul3 = "Questão 03: Certa"
+
+                qtdvalida++
+            } else {
+                resul3= "Questão 03: Errada " + "<br>"+ " Resposta Correta: 1. China"+ "<br>"
+
+                qtdfalse++
+            }
+
+            if (q4 == 2) {
+                resul4 = "Questão 04: Certa"
+
+                qtdvalida++
+            } else {
+                resul4 = "Questão 04: Errada "+ "<br>" + " Resposta Correta: 2. 100cm"+ "<br>"
+                qtdfalse++
+            }
+
+            if (q5 == 3) {
+                resul5 = "Questão 05: Certa"
+
+                qtdvalida++
+            } else {
+                resul5 = "Questão 05: Errada "+"<br>"+ " Resposta Correta: 3. Barack Obama"+ "<br>"
+                qtdfalse++
+            }
+
+            if (q6 == 3) {
+                resul6 = "Questão 06: Certa"
+
+                qtdvalida++
+            } else {
+                resul6 = "Questão 06: Errada "+"<br>"+"  Resposta Correta: 3. Pelé"+ "<br>"
+
+                qtdfalse++
+            }
+
+            if (q7 == 3) {
+                resul7 = "Questão 07: Certa"
+
+                qtdvalida++
+            } else {
+                resul7 = "Questão 07: Errada "+"<br>"+" Resposta Correta: 3. Penalti"+ "<br>"
+
+                qtdfalse++
+            }
+
+            if (q8 == 2) {
+                resul8 = "Questão 08: Certa"
+
+                qtdvalida++
+            } else {
+                resul8 = "Questão 08: Errada "+"<br>"+" Resposta Correta: 2. Liverpool"+ "<br>"
+                qtdfalse++
+            }
+
+            if (q9 == 3) {
+
+                resul9 = "Questão 09: Certa"
+
+                qtdvalida++
+            } else {
+                resul9 = "Questão 09: Errada"+"<br>"+" Resposta Correta: 3. Samsung"+ "<br>"
+
+                qtdfalse++
+            }
+
+            if (q10 == 1) {
+                resul10= "Questão 10: Certa"
+
+                qtdvalida++
+            } else {
+                resul10 = "Questão 10: Errada"+"<br>" +" Resposta Correta: 1. 100"+ "<br>"
+
+                qtdfalse++
+            }
+    
+        
+            resul = qtdvalida
+            document.getElementById("resultado").innerHTML = "</br>"+resul1 +"</br>"+resul2+"</br>"+resul3+"</br>"+resul4+"</br>"+resul5+"</br>"+resul6+"</br>"+resul7+"</br>"+resul8+"</br>"+resul9+"</br>"+resul10 + "<br>" +  "<br>" +login + " O  seu resultado é de: " + qtdvalida + " Acertos" + " e " +  qtdfalse+ " Erros"
+
+
+        console.log(scorevalida)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Q1 @@@@@ X
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
